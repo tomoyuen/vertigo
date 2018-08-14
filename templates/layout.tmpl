@@ -15,7 +15,13 @@
 		<header>
 			<h3>
 				<a href="/">{{blogname}}</a>
-				<a href="/rss"><i class="icon-rss"></i></a>
+				<form class="search" method="post" action="/posts/search" style="display: inline; float: right;">
+					<fieldset class="search">
+						<legend style="display: none;">Search from posts</legend>
+						<input name="query" type="search" spellcheck="false" required="required" placeholder="Search Posts">
+					</fieldset>
+				</form>
+				<!-- <a href="/rss"><i class="icon-rss"></i></a> -->
 			</h3>
 			<small>{{description}}</small>
 		</header>
